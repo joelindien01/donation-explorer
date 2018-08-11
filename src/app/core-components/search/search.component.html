@@ -1,0 +1,32 @@
+<div class="row">
+  <div class="col-lg-12 text-center">
+    <h1>Rechercher un bénéficiaire</h1>
+
+    <form class="form-horizontal">
+      <!-- Search input-->
+      <div class="form-group">
+
+        <div class="col-md-offset-2 col-md-8">
+
+
+            <input id="searchinput" [(ngModel)]="searchInputValue" name="searchinput" type="search" placeholder="Ex: Koffi Kodjo"
+                   class="form-control input-md recipient-search-input" required="">
+
+            <button class="btn btn-primary" (click)="searchRecipient()">send <i class="fa fa-send-o"></i></button>
+
+        </div>
+
+      </div>
+
+
+    </form>
+
+  </div>
+</div>
+
+
+<!--<div class="row">
+  <h3>Résultats de recherche pour: Koffi kodjo</h3>
+  <app-recipient-simple-view></app-recipient-simple-view>
+
+</div>-->

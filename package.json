@@ -5,9 +5,15 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "build:prod": "ng build --prod --base-href https://www.axeladigo.com/pages/donation-explorer/",
+    "build:prodbis": "ng build --prod --base-href /usr/share/nginx/html/dist/donation-explorer/donation-explorer/",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "docker build": "docker image build -t donation-explorer .",
+    "docker serve": "docker run -p 3000:80 --rm donation-explorer",
+    "docker tag": "docker tag donation-explorer axelito/donation-explorer",
+    "docker push": "`"
   },
   "private": true,
   "dependencies": {
